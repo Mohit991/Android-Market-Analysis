@@ -28,7 +28,7 @@ df.drop(['App','Content Rating','Last Updated','Current Ver','Android Ver','Genr
 # print(df.isnull().values.sum()) gives the total number of null values
 
 # print(df.isnull().any())
-# so Rating and Type contain null values, lets fix them
+# so Rating and Type contain null values, lets fix them here
 df.dropna(inplace=True)
 print(df.isnull().any())
 #
